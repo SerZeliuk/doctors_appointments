@@ -1,0 +1,185 @@
+/* doctor.css */
+
+.doctor-dashboard {
+    padding: 20px;
+  }
+  
+  .doctor-selection {
+    margin-bottom: 20px;
+  }
+  
+  .doctor-selection label {
+    margin-right: 10px;
+  }
+  
+  .dashboard-section {
+    margin-bottom: 30px;
+  }
+  
+  .appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .appointments-table th,
+  .appointments-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .appointments-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  /* styles/doctor.css */
+
+/* Existing Modal Styles from modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto; /* Scroll if content is too long */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Close Button */
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #aaa;
+  transition: color 0.3s;
+}
+
+.modal-close-button:hover {
+  color: #000;
+}
+
+/* Dashboard Buttons */
+.dashboard-buttons {
+  margin: 20px 0;
+}
+
+.dashboard-buttons button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dashboard-buttons button:hover {
+  background-color: #218838;
+}
+
+/* Form Styles */
+.availability-form label,
+.absence-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.availability-form input[type="date"],
+.availability-form input[type="time"],
+.availability-form select,
+.availability-form textarea,
+.absence-form input[type="date"],
+.absence-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.availability-form fieldset,
+.absence-form fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.availability-form legend,
+.absence-form legend {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+.availability-form .time-range,
+.absence-form .time-range {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.availability-form .time-range label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.availability-form .time-range label:last-child {
+  margin-right: 0;
+}
+
+.availability-form button,
+.absence-form button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.availability-form button:hover,
+.absence-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Appointments Table */
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.appointments-table th,
+.appointments-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.appointments-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.appointments-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.appointments-table tr:hover {
+  background-color: #ddd;
+}

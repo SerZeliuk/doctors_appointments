@@ -1,0 +1,54 @@
+{
+  "specialties": [
+    {
+      "name": "Cardiology",
+      "color": "#EEDD33",
+      "_id": "92c4"
+    },
+    {
+      "name": "Dermatology",
+      "color": "#AB44CE",
+      "_id": "70ad"
+    },
+    {
+      "name": "Neurology",
+      "color": "#00BFFF",
+      "_id": "b967"
+    },
+    {
+      "name": "Pediatrics",
+      "color": "#FF69B4",
+      "_id": "5a5b"
+    },
+    {
+      "name": "Orthopedics",
+      "color": "#32CD32",
+      "_id": "6afc"
+    },
+    {
+      "name": "Oncology",
+      "color": "#FF4500",
+      "_id": "0fa8"
+    },
+    {
+      "name": "Psychiatry",
+      "color": "#8A2BE2",
+      "_id": "71f0"
+    },
+    {
+      "name": "Radiology",
+      "color": "#FFD700",
+      "_id": "477a"
+    },
+    {
+      "name": "Surgery",
+      "color": "#DC143C",
+      "_id": "229d"
+    },
+    {
+      "name": "Endocrinology",
+      "color": "#1E90FF",
+      "_id": "dc08"
+    }
+  ]
+}

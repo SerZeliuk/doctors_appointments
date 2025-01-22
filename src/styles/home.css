@@ -1,0 +1,30 @@
+/* src/components/Home.css */
+.home-container {
+    text-align: center;
+    padding: 20px;
+    color: antiquewhite;
+  }
+  
+  .data-source-selection {
+    margin-top: 30px;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .data-source-selection h2 {
+    margin-bottom: 15px;
+  }
+  
+  .data-source-selection form div {
+    margin-bottom: 10px;
+  }
+  
+  .data-source-selection label {
+    margin-left: 8px;
+  }
+
+  h2 {
+    font-size: 24px;
+    color:rgb(255, 255, 255)
+  }
+  

@@ -1,0 +1,143 @@
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6d5bfa, #9a57d3);
+    
+    color: #333;
+}
+ 
+.authform{
+  width: 30%;
+  align-self: center;
+  justify-self: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.container {
+    width: 100%;
+    /* max-width: 90%; */
+    min-width: 90%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }  
+   
+  
+  h2 {
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"],
+  input[type="name"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="name"]:focus,
+  input[type="number"]:focus,
+  input[type="password"]:focus {
+    border-color: #6d5bfa;
+    outline: none;
+    box-shadow: 0 0 5px rgba(109, 91, 250, 0.3);
+  }
+  /* button {
+    width: 100%;
+    max-width: 110px;
+    max-height: 50px;
+    padding: 12px;
+    margin-top: 10px;
+    background: #6d5bfa;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  } */
+/*   
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #6d5bfa;
+    outline: none;
+    box-shadow: 0 0 5px rgba(109, 91, 250, 0.3);
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #6d5bfa;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #5948d4;
+  }
+  
+  a {
+    color: #6d5bfa;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  */
+
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+   

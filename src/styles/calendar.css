@@ -1,0 +1,237 @@
+/* calendar.css */
+
+.calendar-container {
+  width: 100%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+.current-week {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.calendar-header {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.time-axis-header {
+  width: 60px;
+}
+
+.day-header {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-left: 1px solid #ccc;
+}
+
+.today-column {
+  background: #fffae6;
+}
+
+.calendar-grid {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.time-column {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  border-right: 1px solid #ccc;
+}
+
+.time-label {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
+  font-size: 12px;
+  border-bottom: #f97f8b 2px solid;
+  color: #666;
+}
+
+.day-column {
+  flex: 1;
+  border-left: 1px solid #ccc;
+  position: relative;
+}
+
+.time-slot {
+  height: 40px;
+  border-bottom: 2px solid #598a33;
+  cursor: pointer;
+  position: relative;
+}
+
+.time-slot:hover {
+  background: #e6f2ff;
+}
+
+.past-slot {
+  background: #f9f9f9;
+}
+
+.past-appointment {
+  filter: grayscale(100%);
+}
+
+.current-time-indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: red;
+  z-index: 10;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 10px;
+}
+
+.modal-content select,
+.modal-content textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.hover-details {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  max-width: 200px;
+  z-index: 9999;
+}
+/* calendar.css */
+
+.app-header {
+  background-color: #282c34;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* calendar.css */
+
+/* ...existing styles */
+
+/* Availability Styling */
+.available-slot {
+  background-color: #d4edda; /* Light green */
+  cursor: pointer;
+}
+
+.available-slot:hover {
+  background-color: #c3e6cb;
+}
+
+.booked-slot {
+  background-color: #f8d7da; /* Light red */
+  cursor: not-allowed;
+}
+
+.unavailable-slot {
+  background-color: #f1f1f1; /* Light gray */
+  cursor: not-allowed;
+}
+
+.past-slot {
+  background-color: #e2e3e5; /* Darker gray */
+  cursor: not-allowed;
+}
+
+/* Labels */
+.appointment-label {
+  font-size: 10px;
+  color: #721c24;
+}
+
+.available-label {
+  font-size: 10px;
+  color: #155724;
+}
+
+.unavailable-label {
+  font-size: 10px;
+  color: #6c757d;
+}

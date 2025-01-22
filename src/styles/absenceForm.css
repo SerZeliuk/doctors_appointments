@@ -1,0 +1,173 @@
+/* AbsenceForm.css */
+
+/* ================================
+   Overall Absence Form Container
+   ================================ */
+   .absence-form {
+    max-width: 1000px;            /* Maximum width for the form */
+    margin: 0 auto;              /* Center the form horizontally */
+    padding: 20px;               /* Internal padding for spacing */
+    background-color: #fff;      /* White background for the form */
+    border: 1px solid #dee2e6;   /* Light border to define form boundaries */
+    border-radius: 8px;          /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  }
+  
+  /* ===================================
+     Each Absence Entry Styling
+     =================================== */
+  .absence-entry {
+    background-color: #f8f9fa;   /* Light gray background for entries */
+    padding: 10px;                /* Internal padding */
+    border: 1px solid #ced4da;    /* Border to separate entries */
+    border-radius: 5px;           /* Rounded corners */
+    margin-bottom: 15px;          /* Space between entries */
+    position: relative;           /* For positioning the delete button */
+  }
+  
+  /* ================================
+     Form Rows Layout
+     ================================ */
+  .form-row {
+    display: flex;                /* Use flexbox for alignment */
+    flex-wrap: wrap;              /* Allow wrapping on smaller screens */
+    align-items: center;          /* Vertical alignment */
+    margin-bottom: 10px;          /* Space between rows */
+  }
+  
+  /* ================================
+     Labels Styling
+     ================================ */
+  .form-row label {
+    flex: 1 1 25%;                /* Labels take up 25% of the row */
+    margin-right: 10px;           /* Space between label and input */
+    font-weight: 600;             /* Bold labels for emphasis */
+    color: #495057;               /* Dark gray text for readability */
+  }
+  
+  /* ================================
+     Input Fields Styling
+     ================================ */
+  .form-row input[type="date"],
+  .form-row input[type="text"] {
+    flex: 1 1 70%;                /* Inputs take up 70% of the row */
+    padding: 8px 12px;            /* Padding inside inputs */
+    border: 1px solid #ced4da;    /* Border matching Bootstrap's form controls */
+    border-radius: 4px;           /* Slightly rounded corners */
+    font-size: 1rem;              /* Consistent font size */
+    color: #495057;               /* Dark gray text */
+  }
+  
+  .form-row input[type="date"]::-webkit-inner-spin-button,
+  .form-row input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(50%);          /* Customize date input icons if needed */
+  }
+  
+  /* =================================
+     Delete Button Styling
+     ================================= */
+  .delete-button {
+    position: absolute;           /* Position relative to absence-entry */
+    top: -10px;                      /* Align to top */
+    right: 5px;                  /* Align to right to match modal-close-button */
+    background-color: transparent;/* Transparent background */
+    border: none;                 /* No border */
+    color: #dc3545;               /* Bootstrap's danger color (red) */
+    font-size: 0.8rem;            /* Match modal-close-button's font size */
+    cursor: pointer;              /* Pointer cursor on hover */
+    transition: color 0.2s ease-in-out; /* Smooth color transition */
+    padding-bottom: 10px;
+  }
+  
+  .delete-button:hover {
+    color: #a71d2a;               /* Darker red on hover */
+  }
+  .modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  /* =================================
+     Add Absence Button Styling
+     ================================= */
+  .add-button {
+    background-color: #6c757d;    /* Bootstrap's secondary color */
+    color: #fff;                   /* White text */
+    border: none;                  /* No border */
+    padding: 10px 20px;            /* Padding for size */
+    border-radius: 4px;            /* Rounded corners */
+    cursor: pointer;               /* Pointer cursor on hover */
+    transition: background-color 0.2s ease-in-out; /* Smooth background transition */
+  }
+  
+  .add-button:hover {
+    background-color: #5a6268;    /* Darker secondary color on hover */
+  }
+  
+  /* =================================
+     Submit Button Styling
+     ================================= */
+  .submit-button {
+    width: 100%;                   /* Full width */
+    padding: 12px 0;               /* Vertical padding */
+    background-color: #007bff;     /* Bootstrap's primary color */
+    color: #fff;                   /* White text */
+    border: none;                  /* No border */
+    border-radius: 4px;            /* Rounded corners */
+    font-size: 1.1rem;             /* Slightly larger font */
+    cursor: pointer;               /* Pointer cursor on hover */
+    transition: background-color 0.2s ease-in-out; /* Smooth background transition */
+  }
+  
+  .submit-button:hover {
+    background-color: #0069d9;     /* Darker primary color on hover */
+  }
+  
+  /* =================================
+     Conflict Modal Table Styling
+     ================================= */
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,0.05); /* Light gray for striped rows */
+  }
+  
+  /* =================================
+     Modal Buttons Layout
+     ================================= */
+  .modal-buttons {
+    display: flex;                /* Use flexbox for alignment */
+    justify-content: flex-end;    /* Align buttons to the right */
+    gap: 10px;                    /* Space between buttons */
+  }
+  
+  /* =================================
+     Responsive Design Enhancements
+     ================================= */
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;     /* Stack elements vertically on small screens */
+      align-items: flex-start;    /* Align items to the start */
+    }
+  
+    .form-row label,
+    .form-row input[type="date"],
+    .form-row input[type="text"] {
+      flex: 1 1 100%;             /* Inputs take full width */
+      margin-right: 0;            /* Remove right margin */
+      margin-bottom: 10px;        /* Add bottom margin for spacing */
+    }
+  
+    .absence-entry {
+      padding: 10px;              /* Reduce padding on smaller screens */
+    }
+  
+    .delete-button {
+      top: 5px;                   /* Adjust position for smaller screens */
+      right: 5px;
+      font-size: 1.2rem;          /* Slightly smaller font size */
+    }
+  }
+  

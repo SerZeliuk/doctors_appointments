@@ -1,0 +1,693 @@
+{
+ "doctors": [
+    {
+      "_id": "doc-1",
+      "name": "Dr. Alice Johnson",
+      "specialty": "Cardiology",
+      "availability": {
+        "recurring": [
+          {
+            "day": "monday",
+            "startDate": "2024-12-25",
+            "endDate": "2025-02-27",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "14:00"
+              }
+            ]
+          },
+          {
+            "_id": null,
+            "day": "wednesday",
+            "startDate": "2024-12-25",
+            "endDate": "2025-02-27",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "14:00"
+              },
+              {
+                "start": "16:00",
+                "end": "19:00"
+              }
+            ]
+          },
+          {
+            "_id": null,
+            "day": "friday",
+            "startDate": "2024-12-25",
+            "endDate": "2025-02-27",
+            "timeRanges": [
+              {
+                "start": "10:00",
+                "end": "16:00"
+              }
+            ]
+          },
+          {
+            "_id": null,
+            "day": "thursday",
+            "startDate": "2025-01-02",
+            "endDate": "2025-04-02",
+            "timeRanges": [
+              {
+                "start": "06:00",
+                "end": "23:00"
+              }
+            ]
+          }
+        ],
+        "one_time_availabilities": [
+          {
+            "date": "2025-01-02",
+            "timeRanges": [
+              {
+                "start": "10:00",
+                "end": "14:00"
+              }
+            ]
+          },
+          {
+            "_id": null,
+            "date": "2025-01-04",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "18:00"
+              }
+            ]
+          }
+        ],
+        "absences": [
+          {
+            "startDate": "2024-12-31",
+            "endDate": "2024-12-31",
+            "reason": "New Year"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "doc-2",
+      "name": "Dr. Benjamin Lee",
+      "specialty": "Dermatology",
+      "availability": {
+        "recurring": [
+          {
+            "day": "tuesday",
+            "startDate": "2024-12-31",
+            "endDate": "2025-03-28",
+            "timeRanges": [
+              {
+                "start": "09:00",
+                "end": "17:00"
+              }
+            ]
+          },
+          {
+            "day": "thursday",
+            "startDate": "2024-12-31",
+            "endDate": "2025-01-31",
+            "timeRanges": [
+              {
+                "start": "09:00",
+                "end": "17:00"
+              }
+            ]
+          },
+          {
+            "day": "saturday",
+            "startDate": "2024-12-31",
+            "endDate": "2025-01-28",
+            "timeRanges": [
+              {
+                "start": "09:00",
+                "end": "17:00"
+              }
+            ]
+          }
+        ],
+        "one_time_availabilities": [
+          {
+            "date": "2024-12-28",
+            "timeRanges": [
+              {
+                "start": "12:00",
+                "end": "16:00"
+              }
+            ]
+          }
+        ],
+        "absences": [
+          {
+            "startDate": "2025-01-04",
+            "endDate": "2025-01-18",
+            "reason": "af"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "doc-3",
+      "name": "Dr. Catherine Martinez",
+      "specialty": "Neurology",
+      "availability": {
+        "recurring": [
+          {
+            "day": "monday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-01-03",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "16:00"
+              }
+            ]
+          },
+          {
+            "day": "tuesday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "16:00"
+              }
+            ]
+          },
+          {
+            "day": "wednesday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "16:00"
+              }
+            ]
+          },
+          {
+            "day": "thursday",
+            "startDate": "2025-01-02",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "16:00"
+              }
+            ]
+          },
+          {
+            "day": "friday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "16:00"
+              }
+            ]
+          }
+        ],
+        "one_time_availabilities": [
+          {
+            "date": "2024-12-27",
+            "timeRanges": [
+              {
+                "start": "09:00",
+                "end": "12:00"
+              }
+            ]
+          }
+        ],
+        "absences": [
+          {
+            "startDate": "2025-01-04",
+            "endDate": "2025-01-07",
+            "reason": "da"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "doc-4",
+      "name": "Dr. Daniel Kim",
+      "specialty": "Pediatrics",
+      "availability": {
+        "recurring": [
+          {
+            "day": "monday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "09:00",
+                "end": "17:00"
+              }
+            ]
+          },
+          {
+            "day": "friday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "09:00",
+                "end": "17:00"
+              }
+            ]
+          }
+        ],
+        "one_time_availabilities": [
+          {
+            "date": "2024-12-29",
+            "timeRanges": [
+              {
+                "start": "10:00",
+                "end": "14:00"
+              }
+            ]
+          }
+        ],
+        "absences": [
+          {
+            "startDate": "2025-01-04",
+            "endDate": "2025-01-09",
+            "reason": "sadfifnk"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "doc-5",
+      "name": "Dr. Eleanor Scott",
+      "specialty": "Orthopedics",
+      "availability": {
+        "recurring": [
+          {
+            "day": "wednesday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "16:00"
+              }
+            ]
+          },
+          {
+            "day": "thursday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "16:00"
+              }
+            ]
+          }
+        ],
+        "one_time_availabilities": [
+          {
+            "date": "2024-12-28",
+            "timeRanges": [
+              {
+                "start": "11:00",
+                "end": "15:00"
+              }
+            ]
+          }
+        ],
+        "absences": [
+          {
+            "startDate": "2025-01-04",
+            "endDate": "2025-01-05",
+            "reason": "dmk"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "doc-6",
+      "name": "Dr. Frank Wilson",
+      "specialty": "Oncology",
+      "availability": {
+        "recurring": [
+          {
+            "day": "monday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "10:00",
+                "end": "18:00"
+              }
+            ]
+          },
+          {
+            "day": "tuesday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "10:00",
+                "end": "18:00"
+              }
+            ]
+          },
+          {
+            "day": "friday",
+            "startDate": "2025-01-04",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "10:00",
+                "end": "18:00"
+              }
+            ]
+          }
+        ],
+        "one_time_availabilities": [
+          {
+            "date": "2024-12-26",
+            "timeRanges": [
+              {
+                "start": "12:00",
+                "end": "16:00"
+              }
+            ]
+          }
+        ],
+        "absences": [
+          {
+            "startDate": "2025-01-04",
+            "endDate": "2025-01-05",
+            "reason": "njamkdf"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "doc-7",
+      "name": "Dr. Grace Lee",
+      "specialty": "Psychiatry",
+      "availability": {
+        "recurring": [
+          {
+            "day": "tuesday",
+            "startDate": "2025-01-01",
+            "endDate": "2025-04-01",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "16:00"
+              }
+            ]
+          },
+          {
+            "day": "wednesday",
+            "startDate": "2025-01-01",
+            "endDate": "2025-04-01",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "16:00"
+              }
+            ]
+          },
+          {
+            "day": "thursday",
+            "startDate": "2025-01-01",
+            "endDate": "2025-01-15",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "16:00"
+              }
+            ]
+          },
+          {
+            "_id": null,
+            "day": "thursday",
+            "startDate": "2025-01-16",
+            "endDate": "2025-04-01",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "19:00"
+              }
+            ]
+          }
+        ],
+        "one_time_availabilities": [
+          {
+            "date": "2024-12-27",
+            "timeRanges": [
+              {
+                "start": "09:00",
+                "end": "13:00"
+              }
+            ]
+          }
+        ],
+        "absences": [
+          {
+            "startDate": "2025-01-04",
+            "endDate": "2025-01-04",
+            "reason": "ZDMKj"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "doc-8",
+      "name": "Dr. Henry Adams",
+      "specialty": "Radiology",
+      "availability": {
+        "recurring": [
+          {
+            "day": "monday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "07:00",
+                "end": "15:00"
+              }
+            ]
+          },
+          {
+            "day": "tuesday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "07:00",
+                "end": "15:00"
+              }
+            ]
+          },
+          {
+            "day": "friday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "07:00",
+                "end": "15:00"
+              }
+            ]
+          }
+        ],
+        "one_time_availabilities": [
+          {
+            "date": "2024-12-29",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "12:00"
+              }
+            ]
+          }
+        ],
+        "absences": [
+          {
+            "startDate": "2025-01-04",
+            "endDate": "2025-01-04",
+            "reason": "ADFs"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "doc-9",
+      "name": "Dr. Isabella Thompson",
+      "specialty": "Surgery",
+      "availability": {
+        "recurring": [
+          {
+            "day": "wednesday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "09:00",
+                "end": "17:00"
+              }
+            ]
+          },
+          {
+            "day": "thursday",
+            "startDate": "2025-01-03",
+            "endDate": "2025-04-03",
+            "timeRanges": [
+              {
+                "start": "09:00",
+                "end": "17:00"
+              }
+            ]
+          }
+        ],
+        "one_time_availabilities": [
+          {
+            "date": "2024-12-30",
+            "timeRanges": [
+              {
+                "start": "10:00",
+                "end": "14:00"
+              }
+            ]
+          }
+        ],
+        "absences": [
+          {
+            "startDate": "2025-01-04",
+            "endDate": "2025-01-04",
+            "reason": "DCA"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "doc-10",
+      "name": "Dr. Jack White",
+      "specialty": "Endocrinology",
+      "availability": {
+        "recurring": [
+          {
+            "day": "tuesday",
+            "startDate": "2025-01-01",
+            "endDate": "2025-04-01",
+            "timeRanges": [
+              {
+                "start": "07:00",
+                "end": "15:00"
+              }
+            ]
+          },
+          {
+            "day": "thursday",
+            "startDate": "2025-01-01",
+            "endDate": "2025-04-01",
+            "timeRanges": [
+              {
+                "start": "07:00",
+                "end": "15:00"
+              }
+            ]
+          },
+          {
+            "day": "friday",
+            "startDate": "2025-01-01",
+            "endDate": "2025-04-01",
+            "timeRanges": [
+              {
+                "start": "07:00",
+                "end": "15:00"
+              }
+            ]
+          }
+        ],
+        "one_time_availabilities": [
+          {
+            "date": "2024-12-28",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "12:00"
+              }
+            ]
+          }
+        ],
+        "absences": [
+          {
+            "startDate": "2025-01-04",
+            "endDate": "2025-01-04",
+            "reason": "AD"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "doc-11",
+      "name": "Dr. Jack Black",
+      "specialty": "Endocrinology",
+      "availability": {
+        "recurring": [
+          {
+            "day": "monday",
+            "startDate": "2025-01-01",
+            "endDate": "2025-04-01",
+            "timeRanges": [
+              {
+                "start": "07:00",
+                "end": "15:00"
+              }
+            ]
+          },
+          {
+            "day": "wednesday",
+            "startDate": "2025-01-01",
+            "endDate": "2025-04-01",
+            "timeRanges": [
+              {
+                "start": "07:00",
+                "end": "15:00"
+              }
+            ]
+          },
+          {
+            "day": "friday",
+            "startDate": "2025-01-01",
+            "endDate": "2025-04-01",
+            "timeRanges": [
+              {
+                "start": "07:00",
+                "end": "15:00"
+              }
+            ]
+          }
+        ],
+        "one_time_availabilities": [
+          {
+            "date": "2024-12-28",
+            "timeRanges": [
+              {
+                "start": "08:00",
+                "end": "12:00"
+              }
+            ]
+          }
+        ],
+        "absences": [
+          {
+            "startDate": "2025-01-04",
+            "endDate": "2025-01-04",
+            "reason": "A"
+          }
+        ]
+      }
+    }
+  ]
+}

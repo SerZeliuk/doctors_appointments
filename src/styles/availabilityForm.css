@@ -1,0 +1,254 @@
+/* styles/availabilityForm.css */
+
+/* General Form Styles */
+.availability-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.availability-form h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.availability-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.availability-form select,
+.availability-form input[type="date"],
+.availability-form input[type="time"],
+.availability-form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.availability-form .form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.availability-form .form-row label {
+  flex: 1;
+}
+
+/* Specific Delete Button Styling for Entire Availability Containers */
+.recurring-availability .delete-button,
+.one-time-availability .delete-button,
+.absence-entry .delete-button {
+  position: absolute; /* Position relative to the container */
+  top: -10px;         /* Distance from the top */
+  right: 10px;        /* Distance from the right */
+  background-color: transparent; /* Ensure transparency */
+  border: none;
+  color: #ff5c5c;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.recurring-availability .delete-button:hover,
+.one-time-availability .delete-button:hover,
+.absence-entry .delete-button:hover {
+  color: #ff0000;
+}
+
+/* ================================
+ Time Range Styling
+ ================================ */
+.time-range {
+  position: relative; /* Establish positioning context */
+  padding-top: 30px;  /* Increased space above for the delete button */
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9; /* Optional: Light background for better visibility */
+}
+
+.time-range .delete-time-range-button {
+  position: absolute;           /* Position relative to the time-range container */
+  top: 0;                       /* Align to the top */
+  right: 0;                     /* Align to the right */
+  background-color: transparent;/* Transparent background */
+  border: none;
+  color: #dc3545;               /* Bootstrap's danger color (red) */
+  font-size: 0.8rem;            /* Match modal-close-button's font size */
+  cursor: pointer;              /* Pointer cursor on hover */
+  transition: color 0.2s ease-in-out; /* Smooth color transition */
+  padding: 0;                   /* Remove any default padding */
+}
+
+.time-range .delete-time-range-button:hover {
+  color: #ff0000;
+}
+
+.availability-form .time-range input[type="time"] {
+  flex: 1;
+}
+
+.availability-form .time-range span {
+  margin-right: 10px;
+}
+
+/* =================================
+ Add Time Range Button Styling
+ ================================= */
+.availability-form .time-ranges button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.availability-form .time-ranges button:hover {
+  background-color: #0056b3;
+}
+
+/* =================================
+ Add Availability Button Styling
+ ================================= */
+.availability-form button[type="button"] {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.availability-form button[type="button"]:hover {
+  background-color: #218838;
+}
+
+/* =================================
+ Submit Button Styling
+ ================================= */
+.availability-form .submit-button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.availability-form .submit-button:hover {
+  background-color: #218838;
+}
+
+.availability-form hr {
+  margin: 20px 0;
+}
+
+/* Optional: Enhance readability */
+.recurring-availability,
+.one-time-availability,
+.absence-entry {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  position: relative; /* For positioning delete buttons */
+  background-color: #f1f1f1; /* Optional: Light background for better visibility */
+}
+
+.recurring-availability .form-row,
+.one-time-availability .form-row,
+.absence-entry .form-row {
+  margin-bottom: 10px;
+}
+
+/* =================================
+ Modal Buttons Layout
+ ================================= */
+.modal-buttons {
+  display: flex;                /* Use flexbox for alignment */
+  justify-content: flex-end;    /* Align buttons to the right */
+  gap: 10px;                    /* Space between buttons */
+}
+
+/* =================================
+ Responsive Design Enhancements
+ ================================= */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;     /* Stack elements vertically on small screens */
+    align-items: flex-start;    /* Align items to the start */
+  }
+
+  .form-row label,
+  .form-row input[type="date"],
+  .form-row input[type="time"],
+  .form-row select,
+  .form-row input[type="text"] {
+    flex: 1 1 100%;             /* Inputs take full width */
+    margin-right: 0;            /* Remove right margin */
+    margin-bottom: 10px;        /* Add bottom margin for spacing */
+  }
+
+  .recurring-availability,
+  .one-time-availability,
+  .absence-entry {
+    padding: 10px;              /* Reduce padding on smaller screens */
+  }
+
+  .recurring-availability .delete-button,
+  .one-time-availability .delete-button,
+  .absence-entry .delete-button {
+    top: 5px;                   /* Adjust position for smaller screens */
+    right: 5px;
+    font-size: 1.2rem;          /* Slightly smaller font size */
+  }
+
+  .time-range {
+    padding-top: 20px;          /* Adjust padding to accommodate delete button */
+  }
+
+  .time-range .delete-time-range-button {
+    top: 0;                      /* Adjust position for smaller screens */
+    right: 0;
+    font-size: 0.7rem;          /* Slightly smaller font size */
+  }
+
+  .time-range {
+    flex-direction: column;     /* Stack time range inputs vertically */
+    align-items: flex-start;
+  }
+
+  .time-range input {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .time-range span {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+/* =================================
+ Warning Modal Specific Styles
+ ================================= */
+.warning-modal .modal-container {
+  max-width: 500px; /* Adjust as needed */
+}
+
+.warning-modal .modal-content p {
+  margin-bottom: 20px;
+}
+
+.warning-modal .modal-buttons button {
+  min-width: 100px;
+}
