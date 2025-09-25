@@ -4,7 +4,17 @@
 - Backend: Firebase/Local Server in Node.js with option to switch between them (requirement for the final project for Web Applications course in my university)
 - Database: Firebase/Mongo DB
 
-
+# How to run:
+In base folder:
+```bash
+npm run build 
+```
+Run this to start the frontend (listening on port 3000)
+Then, to start the local Node.js backend:
+``` bash
+cd backend
+node server.js
+```
 
 # Getting Started with Create React App
 
