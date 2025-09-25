@@ -1,3 +1,9 @@
+# About
+This is my final project for Web Applications course on 5-th semester of Computer Science & AI Bachelor's Degree programme at AGH UST in Krakow, Poland.
+The project is a mockup of a website for doctors and patients to book appointments on.
+
+You can choose different specialties and timeslots, determine availability as a doctor (occassional absences or additional work days included), book and cancel appointments and conduct payment.
+
 # Technologies used:
 
 - Frontend: React
