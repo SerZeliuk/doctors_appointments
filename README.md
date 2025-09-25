@@ -1,3 +1,11 @@
+# Technologies used:
+
+- Frontend: React
+- Backend: Firebase/Local Server in Node.js with option to switch between them (requirement for the final project for Web Applications course in my university)
+- Database: Firebase/Mongo DB
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
